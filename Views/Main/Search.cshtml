@@ -1,0 +1,91 @@
+﻿
+@{
+    ViewBag.Title = "Search";
+}
+
+<div>
+    <div>
+        线路查询
+        <div class="">
+            
+        </div>
+    </div>
+
+    <div>
+        站点查询
+    </div>
+
+    <div>
+        路线规划
+    </div>
+</div>
+
+
+<td valign="middle">
+    <table id="Table2" cellspacing="0" cellpadding="0" border="0" class="main">
+        <tr>
+            <td valign="top" style="padding-right:100px">
+                <table id="Table3" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td width="10%"></td>
+                        <td height="50px" class="line">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 线路号：
+                            <asp:DropDownList ID="ddlLineNum" runat="server" Width="100px" CssClass="txtBox"></asp:DropDownList>&nbsp;路&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        </td>
+                        <td class="line">
+                            <asp:Button ID="btnFindLine" runat="server" Width="50px" Text="查询" ToolTip="按照线路号查询" OnClick="btnFindLine_Click" CssClass="btn btn-color"></asp:Button>
+                        </td>
+                        <td width="30%"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <br />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td height="50" class="line">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 站点名：
+                            <asp:TextBox ID="txtStationName" runat="server" Width="120" ToolTip="请输入站点名" CssClass="txtBox"></asp:TextBox>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        </td>
+                        <td class="line">
+                            <asp:Button ID="btnFindName" runat="server" Width="50px" Text="查询" ToolTip="按照站点名查询" OnClick="btnFindName_Click" CssClass="btn btn-color"></asp:Button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <br />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td class="line">
+                            <p style="line-height: 50px; padding:0 10px 0 20px">
+                                路线规划<br />
+                                &nbsp; &nbsp;&nbsp;起点：<asp:TextBox ID="txtStartLocus" runat="server" Width="120px" ToolTip="请输入起始站点名" CssClass="txtBox"></asp:TextBox>&nbsp;
+                                &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;终点：<asp:TextBox ID="txtEndLocus" runat="server" Width="120px" ToolTip="请输入目的站点名" CssClass="txtBox"></asp:TextBox>&nbsp;&nbsp;
+                            </p>
+                        </td>
+                        <td class="line">
+                            <asp:Button ID="btnFindDetail" runat="server" Width="50px" Text="查询" ToolTip="公交转乘查询" OnClick="btnFindDetail_Click" CssClass="btn btn-color"></asp:Button>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <%--
+        <tr>
+            <td style="width: 145px" colspan="3">
+                <table id="Table4" style="height: 36px" cellspacing="0" cellpadding="0" width="630" border="0">
+                    <tr>
+                        <td width="630" align="right">
+                            <font size="2" face="微软雅黑">
+                                <marquee loop="-4" direction="left">
+                                    市公交查询系统由陈鹏设计
+                                    <font size="2">
+                                        ,包含智能模糊查询,支持车费统计！
+                                    </font>
+                                </marquee>
+                        </td>
+                    </tr>--%>
+
